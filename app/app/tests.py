@@ -11,4 +11,3 @@ class CalcTest(TestCase):
     def test_subtract_numbers(slef):
         """test that values are subtracted and returned"""
         slef.assertEqual(subtract(11, 5), 6)
-        

@@ -5,5 +5,4 @@ def add(x, y):
 
 def subtract(x, y):
     """subtract y form  x and  retunr value"""
-    return  x-y
-    
+    return x-y
