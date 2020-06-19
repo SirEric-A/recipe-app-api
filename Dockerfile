@@ -1,5 +1,5 @@
 FROM python:3.8.3-alpine
-MAINTAINER Sir Eric
+LABEL  Sir Eric
 
 ENV PYTHONUNBUFFERED 1
 
