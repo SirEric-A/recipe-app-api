@@ -8,6 +8,6 @@ class CalcTest(TestCase):
         """test taht two numbers are added together"""
         self.assertEqual(add(3, 8), 11)
 
-    def test_subtract_numbers(slef):
+    def test_subtract_numbers(self):
         """test that values are subtracted and returned"""
-        slef.assertEqual(subtract(11, 5), 6)
+        self.assertEqual(subtract(11, 5), 6)
