@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core'
+    'rest_framework',
+    'rest_framework.authtoken',
+    'core',
+    'user'
 ]
 
 MIDDLEWARE = [
@@ -74,12 +77,40 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'HOTS': os.environ.get('DB_HOST'),
+#         'NAME': os.environ.get('DB_NAME'),
+#         'USER': os.environ.get('DB_USER'),
+#         'PASSWORD': os.environ.get('DB_PASS'),
+#         # 'PORT':5432
+
+
+#     }
+# }
+
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR,'db.sqlite3')
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'HOTS': 'xinfuli_bi',
+#         'NAME': 'xinfuli_cx',
+#         'USER': 'xinfuli_cx_201707',
+#         'PASSWORD':'xinfulidb.mysql.aliyuncs.com',
+#         'PORT':'3306'
+
+
+#     }
+# }
 
 
 # Password validation
@@ -121,4 +152,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-AUTH_USER_MODEL='core.User'
+AUTH_USER_MODEL = 'core.User'
